@@ -1,0 +1,145 @@
+@font-face {
+    font-family: Norse;
+    src: url('./Fonts/Norse-Bold.otf')
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+
+body {
+    display: flex;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+input {
+    appearance: none;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+}
+.fern {
+    background-image: url(images/background-image.jpg);
+    background-size: cover;
+    width: 30vw;
+}
+.right-side {
+    width: 70vw;
+}
+#odin {
+    height: 90%;
+}
+h1{
+    font-size: inherit;
+}
+:focus-visible{
+    outline: solid 1px blue;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
+}
+input:invalid{
+    outline: solid 1px red;
+}
+.logo-bar {
+    background-color: rgba(0, 0, 0, .6);
+    margin-top: 25vh;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 5rem;
+    font-family: Norse;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+form, li{
+    display: flex;
+}
+form {
+    padding-right: 20vw;
+    flex: 1;
+}
+.left, .right{
+    flex: 1;
+}
+.right-side {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 244, 244);
+}
+.right-side div {
+    flex: 1;
+}
+.right-side .form{
+    height: 25vh;
+    background-color: white;
+}
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+li{ display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 5px;
+}
+h3 {
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.form {
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, .1);
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.top{
+    text-align: center;
+    width: 50vw;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: large;
+    font-weight: bold;
+}
+button {
+    background-color: #596D48;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+   color: white;
+   font-weight: 600;
+   transition: all .1s;
+}
+button:hover {
+    cursor: pointer;
+    background-color: #506140;
+}
+button:active {
+    background-color: #465538;
+}
+a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
+.bottom {
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.invalid {
+    outline: 1px solid red;
+}

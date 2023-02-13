@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <title>Sign-up Page!</title>
 </head>
 <body>
     <div class="fern">
-        <div class="logo">ODIN</div>
+        <div class="logo-bar"><img src="./images/odin-lined.png" id="odin"> <h1>ODIN</h1></div>
     </div>
     <div class="right-side">
-        <div>
+        <div class="top">
             <p>This is not a real online service!
                 You need something like this in your
                 life to help you realize your deepest
@@ -20,44 +23,46 @@
             </p>
             <p>You <em>know</em> you want to.</p>
         </div>
-        <div class="form">
-            <form action="/sign-up" method="post">
+        <div class="form" style="flex: .2 0 260px;">
+            <h3>Lets do this!</h3>
+            <form action="/sign-up" method="post" id="sign-up">
                 <div class="left">
-                    <ul>
+                    <ul class="list">
                         <li>
-                            <label for="first-name"></label>
+                            <label for="first-name">First Name</label>
                             <input type="text" name="first-name" id="first-name">
                         </li>
                         <li>
-                            <label for=""></label>
-                            <input type="text">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
                         </li>
                         <li>
-                            <label for=""></label>
-                            <input type="text">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" minlength="8">
                         </li>
                     </ul>
                 </div>
                 <div class="right">
-                    <ul>
+                    <ul class="list">
                         <li>
-                            <label for=""></label>
-                            <input type="text">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="last-name" id="last-name">
                         </li>
                         <li>
-                            <label for=""></label>
-                            <input type="text">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="tel" id="phone-number" name="phone-number" >
                         </li>
                         <li>
-                            <label for=""></label>
-                            <input type="text">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" name="confirm-password" minlength="8" >
                         </li>
                     </ul>
                 </div>
             </form>
         </div>
-        <div>
-
+        <div class="bottom">
+            <button type="submit" id="submit" form="sign-up">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
         </div>
     </div>
 </body>
